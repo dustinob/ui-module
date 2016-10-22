@@ -1,0 +1,27 @@
+$blue: #41C2E4;
+$dark: brown;
+
+@import 'include/nav';
+@import 'include/block';
+@import 'include/header';
+@import 'include/hamburger';
+@import 'include/nav-side';
+@import 'include/media-queries';
+
+body {
+	background: $blue;
+}
+
+.btn {
+	background-color: transparent;
+	border: 2px solid red;
+	color: red;
+	padding: 10px 20px;
+	transition: 0.5s;
+	border-radius: 5px;
+}
+.btn:hover {
+	background-color: pink;
+	border: 2px solid green;
+	transition: 0.5s;
+}

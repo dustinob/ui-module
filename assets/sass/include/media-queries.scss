@@ -1,0 +1,36 @@
+@media only screen and (max-width: 460px){
+	.mobile-visible {
+		display: block;
+	}
+	.desktop-visible {
+		display: none;
+	}
+	@for $i from 0 through 6 {
+	.thumbnail-#{$i} {
+	    width: 100%;
+		height: 100%;
+		padding: 5px;
+	}
+}
+
+
+
+.thumbnail:last-child{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+}
+@media only screen and (min-width: 461px){
+	.mobile-visible {
+		display: none;
+	}
+	.desktop-visible {
+		display: block;
+	}	
+	nav {
+		background-color: $dark;
+	}
+	.banner-text {
+		padding: 0 100px;
+	}
+}

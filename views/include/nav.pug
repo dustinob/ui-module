@@ -1,0 +1,8 @@
+nav.desktop-visible: ul.dropdown.nav-top
+	- navlist = ['home', 'about', 'blog', 'contact']
+		each item in navlist
+			li.inline= item
+				ul.dropdown-menu(class="menu-" + ((navlist.indexOf(item)) + 1))
+					-var i = 0
+					while (i++ < 6)
+						li= i

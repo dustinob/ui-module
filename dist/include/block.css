@@ -1,0 +1,63 @@
+.grid {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: center; }
+
+.thumbnail-0 {
+  width: 20%;
+  height: 20%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.thumbnail-1 {
+  width: 20%;
+  height: 20%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.thumbnail-2 {
+  width: 20%;
+  height: 20%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.thumbnail-3 {
+  width: 20%;
+  height: 20%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.thumbnail-4 {
+  width: 20%;
+  height: 20%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.thumbnail-5 {
+  width: 20%;
+  height: 20%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.thumbnail-6 {
+  width: 20%;
+  height: 20%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.thumbnail:last-child {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.banner-text {
+  margin: 100px 0px;
+  padding: 0 10px; }

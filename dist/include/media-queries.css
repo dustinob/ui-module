@@ -1,0 +1,13 @@
+@media only screen and (max-width: 460px) {
+  .mobile-visible {
+    display: block; }
+  .desktop-visible {
+    display: none; } }
+
+@media only screen and (min-width: 461px) {
+  .mobile-visible {
+    display: none; }
+  .desktop-visible {
+    display: block; }
+  nav {
+    background-color: green; } }

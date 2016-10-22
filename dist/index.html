@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UT8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="mobile-visible">
+      <button class="c-hamburger c-hamburger--htx" onclick="hideNav()"><span>toggle menu</span></button>
+      <ul class="nav-side nav-side--hide">
+        <li class="list-stack">home
+          <ul class="nav-side-menu menu-1">
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li><a>6</a></li>
+          </ul>
+        </li>
+        <li class="list-stack">about
+          <ul class="nav-side-menu menu-2">
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li><a>6</a></li>
+          </ul>
+        </li>
+        <li class="list-stack">blog
+          <ul class="nav-side-menu menu-3">
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li><a>6</a></li>
+          </ul>
+        </li>
+        <li class="list-stack">contact
+          <ul class="nav-side-menu menu-4">
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li><a>6</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class="desktop-visible">
+      <ul class="dropdown nav-top">
+        <li class="inline">home
+          <ul class="dropdown-menu menu-1">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul>
+        </li>
+        <li class="inline">about
+          <ul class="dropdown-menu menu-2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul>
+        </li>
+        <li class="inline">blog
+          <ul class="dropdown-menu menu-3">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul>
+        </li>
+        <li class="inline">contact
+          <ul class="dropdown-menu menu-4">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="grid">
+      <div class="hero-container"><img class="hero-image" src="http://www.fillmurray.com/960/500" alt="..."></div>
+      <div class="banner-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cupiditate similique quaerat, blanditiis illo, harum saepe velit voluptatum veritatis accusamus reprehenderit mollitia magni quisquam autem ut magnam cumque laborum error.</p>
+      </div><img class="thumbnail thumbnail-0" src="http://www.fillmurray.com/500/500" alt="..."><img class="thumbnail thumbnail-1" src="http://www.fillmurray.com/500/500" alt="..."><img class="thumbnail thumbnail-2" src="http://www.fillmurray.com/500/500" alt="..."><img class="thumbnail thumbnail-3" src="http://www.fillmurray.com/500/500" alt="..."><img class="thumbnail thumbnail-0" src="http://www.fillmurray.com/500/500" alt="..."><img class="thumbnail thumbnail-1" src="http://www.fillmurray.com/500/500" alt="..."><img class="thumbnail thumbnail-2" src="http://www.fillmurray.com/500/500" alt="..."><img class="thumbnail thumbnail-3" src="http://www.fillmurray.com/500/500" alt="...">
+      <div class="banner-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cupiditate similique quaerat, blanditiis illo, harum saepe velit voluptatum veritatis accusamus reprehenderit mollitia magni quisquam autem ut magnam cumque laborum error.</p>
+      </div>
+    </div>
+    <h3></h3>
+    <h2>this is a secodnd linea</h2>
+    <script src="./app.js"></script>
+    <script>
+      var elem = document.querySelector("ul.nav-side.nav-side--hide");
+      function hideNav(){
+      	elem.classList.toggle("nav-side--show");
+      	console.log('clicked');
+      }
+      (function() {
+      
+      	"use strict";
+      
+      	var toggles = document.querySelectorAll(".c-hamburger");
+      
+      	for (var i = toggles.length - 1; i >= 0; i--) {
+      		var toggle = toggles[i];
+      		toggleHandler(toggle);
+      	};
+      
+      	function toggleHandler(toggle) {
+      		toggle.addEventListener( "click", function(e) {
+      			e.preventDefault();
+      			(this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      			console.log('hamburger')
+      		});
+      	}
+      })();
+    </script>
+  </body>
+</html>

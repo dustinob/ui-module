@@ -1,0 +1,13 @@
+nav.mobile-visible
+	button.c-hamburger(class="c-hamburger--htx", onclick="hideNav()")
+		span toggle menu
+	ul.nav-side.nav-side--hide
+		- navlist = ['home', 'about', 'blog', 'contact']
+		each item in navlist
+			li.list-stack= item
+				ul.nav-side-menu(class="menu-" + ((navlist.indexOf(item)) + 1))
+					-var i = 0
+					while (i++ < 6)
+						li
+							a= i
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UT8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="./app.js"></script>
+    <script>
+      var elem = document.querySelector("ul.nav-side.nav-side--hide");
+      function hideNav(){
+      	elem.classList.toggle("nav-side--show");
+      	console.log('clicked');
+      }
+      (function() {
+      
+      	"use strict";
+      
+      	var toggles = document.querySelectorAll(".c-hamburger");
+      
+      	for (var i = toggles.length - 1; i >= 0; i--) {
+      		var toggle = toggles[i];
+      		toggleHandler(toggle);
+      	};
+      
+      	function toggleHandler(toggle) {
+      		toggle.addEventListener( "click", function(e) {
+      			e.preventDefault();
+      			(this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      			console.log('hamburger')
+      		});
+      	}
+      })();
+    </script>
+  </body>
+</html>
